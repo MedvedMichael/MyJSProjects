@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300px;
+    background: #f7cfa5;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 30px;
+    font-family: "Cuprum"
+}
+h1{
+    font-weight: 500;
+    font-size: 70px;
+    color: #f19730;
+    text-align: center;
+}
+.h1{
+    font-size: 40px;
+}
+
+
+
+.mainTable {
+    margin: 0 auto;
+    border-spacing: 40px 20px;
+}
+.inputMatrixTable {
+    margin: 0 auto;
+    border-spacing: 40px 10px;
+
+}
+
+.mainButton{
+    width: 200px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2.5px;
+    background-image: linear-gradient(336deg, #ffbd75, #ff964b),
+    linear-gradient(#fff, #fff);
+    box-shadow: 0 2.5px 10px 0 rgba(1, 0, 42, .1);
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 100
+    }
+ 
+.textInput {
+    height: 35px;
+    width: 35px;
+    border-radius: 2.5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2.5px 10px 0 rgba(1, 0, 42, .1);
+    border: none;
+    
+    font-size: 14px;
+    color: #a7a7a7
+}
+.textInputMatrix {
+    height: 35px;
+    width: 200px;
+    border-radius: 2.5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2.5px 10px 0 rgba(1, 0, 42, .1);
+    border: none;
+    
+    font-size: 14px;
+    color: #a7a7a7
+}
