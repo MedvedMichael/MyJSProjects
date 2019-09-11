@@ -17,33 +17,33 @@ initTable(endTable,mWidth2 , mHeight1,3);
 let textInputMatrix1 = document.getElementById('textInputMatrix1'),
     textInputMatrix2 = document.getElementById('textInputMatrix2');
 
-textInputMatrix1.addEventListener('change', function () {
+textInputMatrix1.addEventListener('input', function () {
     table1 = document.getElementById('table1');
-    removeAllElemetnsFromTable(table1);
-    removeAllElemetnsFromTable(endTable);
+    removeAllElementsFromTable(table1);
+    removeAllElementsFromTable(endTable);
     mHeight1 = textInputMatrix1.value.split('x')[0];
     mWidth1 = textInputMatrix1.value.split('x')[1];
 
-    flag = false;
+   // flag = false;
     initTable(table1, +mWidth1, +mHeight1,1);
 
     initTable(endTable,mWidth2 , mHeight1,3);
 });
 
-textInputMatrix2.addEventListener('change', function () {
+textInputMatrix2.addEventListener('input', function () {
     table2 = document.getElementById('table2');
-    removeAllElemetnsFromTable(table2);
-    removeAllElemetnsFromTable(endTable);
+    removeAllElementsFromTable(table2);
+    removeAllElementsFromTable(endTable);
     
 
     mHeight2 = textInputMatrix2.value.split('x')[0];
     mWidth2 = textInputMatrix2.value.split('x')[1];
-    flag = true;
+   // flag = true;
     initTable(table2, +mWidth2, +mHeight2,2);
     initTable(endTable,mWidth2 , mHeight1,3);
 });
 
-function removeAllElemetnsFromTable(table)
+function removeAllElementsFromTable(table)
 {
     while (table.firstChild)
     table.removeChild(table.firstChild);
